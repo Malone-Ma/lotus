@@ -5,9 +5,10 @@ import (
 	"fmt"
 
 	"github.com/filecoin-project/go-address"
+	"github.com/ipfs/go-cid"
+
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/wallet"
-	"github.com/ipfs/go-cid"
 )
 
 func Address(i uint64) address.Address {

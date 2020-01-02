@@ -4,8 +4,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/filecoin-project/lotus/extern/rleplus"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/filecoin-project/lotus/extern/rleplus"
 )
 
 func TestDecode(t *testing.T) {

@@ -4,12 +4,12 @@ import (
 	"context"
 
 	"github.com/filecoin-project/go-address"
+	"go.uber.org/fx"
+	"golang.org/x/xerrors"
+
 	"github.com/filecoin-project/lotus/chain/stmgr"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/wallet"
-
-	"go.uber.org/fx"
-	"golang.org/x/xerrors"
 )
 
 type WalletAPI struct {

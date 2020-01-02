@@ -3,12 +3,13 @@ package types
 import (
 	"context"
 
-	"github.com/filecoin-project/go-amt-ipld"
-	"github.com/filecoin-project/lotus/chain/actors/aerrors"
 	"github.com/filecoin-project/go-address"
+	"github.com/filecoin-project/go-amt-ipld"
 	cid "github.com/ipfs/go-cid"
 	hamt "github.com/ipfs/go-hamt-ipld"
 	cbg "github.com/whyrusleeping/cbor-gen"
+
+	"github.com/filecoin-project/lotus/chain/actors/aerrors"
 )
 
 type Storage interface {

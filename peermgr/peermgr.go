@@ -5,15 +5,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/filecoin-project/lotus/node/modules/dtypes"
-	"go.uber.org/fx"
-
+	logging "github.com/ipfs/go-log"
 	host "github.com/libp2p/go-libp2p-core/host"
 	net "github.com/libp2p/go-libp2p-core/network"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	dht "github.com/libp2p/go-libp2p-kad-dht"
+	"go.uber.org/fx"
 
-	logging "github.com/ipfs/go-log"
+	"github.com/filecoin-project/lotus/node/modules/dtypes"
 )
 
 var log = logging.Logger("peermgr")

@@ -3,8 +3,9 @@ package actors
 import (
 	"bytes"
 
-	"github.com/filecoin-project/lotus/chain/actors/aerrors"
 	cbg "github.com/whyrusleeping/cbor-gen"
+
+	"github.com/filecoin-project/lotus/chain/actors/aerrors"
 )
 
 var (

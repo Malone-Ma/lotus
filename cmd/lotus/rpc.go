@@ -3,24 +3,24 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"github.com/filecoin-project/lotus/api/apistruct"
 	"net/http"
 	_ "net/http/pprof"
 	"os"
 	"os/signal"
 	"syscall"
 
-	"github.com/filecoin-project/lotus/api"
-	"github.com/filecoin-project/lotus/lib/auth"
-	"github.com/filecoin-project/lotus/lib/jsonrpc"
-	"github.com/filecoin-project/lotus/node"
-	"github.com/filecoin-project/lotus/node/impl"
-
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log"
 	"github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr-net"
 	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/api"
+	"github.com/filecoin-project/lotus/api/apistruct"
+	"github.com/filecoin-project/lotus/lib/auth"
+	"github.com/filecoin-project/lotus/lib/jsonrpc"
+	"github.com/filecoin-project/lotus/node"
+	"github.com/filecoin-project/lotus/node/impl"
 )
 
 var log = logging.Logger("main")

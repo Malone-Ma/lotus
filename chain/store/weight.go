@@ -4,11 +4,12 @@ import (
 	"context"
 	"math/big"
 
+	"golang.org/x/xerrors"
+
 	"github.com/filecoin-project/lotus/build"
 	"github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/vm"
-	"golang.org/x/xerrors"
 )
 
 var zero = types.NewInt(0)

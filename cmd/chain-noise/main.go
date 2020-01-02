@@ -7,12 +7,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/filecoin-project/lotus/api"
 	"github.com/filecoin-project/go-address"
+	"gopkg.in/urfave/cli.v2"
+
+	"github.com/filecoin-project/lotus/api"
 	"github.com/filecoin-project/lotus/chain/types"
 	lcli "github.com/filecoin-project/lotus/cli"
-
-	"gopkg.in/urfave/cli.v2"
 )
 
 func main() {

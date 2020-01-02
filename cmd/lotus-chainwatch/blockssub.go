@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 
-	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/ipfs/go-cid"
 
 	aapi "github.com/filecoin-project/lotus/api"
+	"github.com/filecoin-project/lotus/chain/types"
 )
 
 func subBlocks(ctx context.Context, api aapi.FullNode, st *storage) {

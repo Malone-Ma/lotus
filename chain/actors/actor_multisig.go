@@ -1,13 +1,12 @@
 package actors
 
 import (
+	"github.com/filecoin-project/go-address"
 	"github.com/ipfs/go-cid"
+	cbg "github.com/whyrusleeping/cbor-gen"
 
 	"github.com/filecoin-project/lotus/chain/actors/aerrors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/types"
-
-	cbg "github.com/whyrusleeping/cbor-gen"
 )
 
 type MultiSigActor struct{}

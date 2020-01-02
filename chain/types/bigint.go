@@ -6,12 +6,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/filecoin-project/lotus/build"
 	cbor "github.com/ipfs/go-ipld-cbor"
 	"github.com/polydawn/refmt/obj/atlas"
-
 	cbg "github.com/whyrusleeping/cbor-gen"
 	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/build"
 )
 
 const BigIntMaxSerializedLen = 128 // is this big enough? or too big?

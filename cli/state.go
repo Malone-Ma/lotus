@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/filecoin-project/lotus/api"
 	"github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/lotus/chain/types"
-	"golang.org/x/xerrors"
-
 	"github.com/ipfs/go-cid"
+	"golang.org/x/xerrors"
 	"gopkg.in/urfave/cli.v2"
+
+	"github.com/filecoin-project/lotus/api"
+	"github.com/filecoin-project/lotus/chain/types"
 )
 
 var stateCmd = &cli.Command{

@@ -1,10 +1,10 @@
 package client
 
 import (
-	"github.com/filecoin-project/lotus/api/apistruct"
 	"net/http"
 
 	"github.com/filecoin-project/lotus/api"
+	"github.com/filecoin-project/lotus/api/apistruct"
 	"github.com/filecoin-project/lotus/lib/jsonrpc"
 )
 

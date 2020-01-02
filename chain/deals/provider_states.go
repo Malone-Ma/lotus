@@ -4,11 +4,10 @@ import (
 	"bytes"
 	"context"
 
+	unixfile "github.com/ipfs/go-unixfs/file"
 	ipldfree "github.com/ipld/go-ipld-prime/impl/free"
 	"github.com/ipld/go-ipld-prime/traversal/selector"
 	"github.com/ipld/go-ipld-prime/traversal/selector/builder"
-
-	unixfile "github.com/ipfs/go-unixfs/file"
 	"golang.org/x/xerrors"
 
 	"github.com/filecoin-project/lotus/api"

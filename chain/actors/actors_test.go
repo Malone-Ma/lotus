@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/filecoin-project/lotus/build"
-
-	. "github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/go-address"
+	dstore "github.com/ipfs/go-datastore"
+	bstore "github.com/ipfs/go-ipfs-blockstore"
+
+	"github.com/filecoin-project/lotus/build"
+	. "github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/lotus/chain/gen"
 	"github.com/filecoin-project/lotus/chain/store"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/vm"
-	dstore "github.com/ipfs/go-datastore"
-	bstore "github.com/ipfs/go-ipfs-blockstore"
 )
 
 func blsaddr(n uint64) address.Address {

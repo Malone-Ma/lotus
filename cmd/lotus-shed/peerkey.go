@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
+	"github.com/libp2p/go-libp2p-core/peer"
 	"gopkg.in/urfave/cli.v2"
 
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/node/modules/lp2p"
-	"github.com/libp2p/go-libp2p-core/peer"
 )
 
 type keystore struct {

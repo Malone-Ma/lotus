@@ -9,8 +9,9 @@ import (
 	"strings"
 
 	"github.com/filecoin-project/go-address"
-	types "github.com/filecoin-project/lotus/chain/types"
 	"gopkg.in/urfave/cli.v2"
+
+	types "github.com/filecoin-project/lotus/chain/types"
 )
 
 var walletCmd = &cli.Command{

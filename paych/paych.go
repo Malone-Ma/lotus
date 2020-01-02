@@ -7,13 +7,12 @@ import (
 	"math"
 	"strconv"
 
-	"golang.org/x/xerrors"
-
+	"github.com/filecoin-project/go-address"
 	logging "github.com/ipfs/go-log"
 	"go.uber.org/fx"
+	"golang.org/x/xerrors"
 
 	"github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/stmgr"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/node/impl/full"

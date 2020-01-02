@@ -2,7 +2,7 @@ package cli
 
 import (
 	"github.com/docker/go-units"
-	"github.com/filecoin-project/go-sectorbuilder/paramfetch"
+	paramfetch "github.com/filecoin-project/go-paramfetch"
 	"golang.org/x/xerrors"
 	"gopkg.in/urfave/cli.v2"
 )

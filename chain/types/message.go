@@ -4,11 +4,10 @@ import (
 	"bytes"
 	"fmt"
 
+	"github.com/filecoin-project/go-address"
 	block "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	"github.com/multiformats/go-multihash"
-
-	"github.com/filecoin-project/go-address"
 )
 
 type Message struct {

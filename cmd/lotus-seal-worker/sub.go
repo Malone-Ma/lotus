@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
+	paramfetch "github.com/filecoin-project/go-paramfetch"
 	sectorbuilder "github.com/filecoin-project/go-sectorbuilder"
-	"github.com/filecoin-project/go-sectorbuilder/paramfetch"
 	"golang.org/x/xerrors"
 
 	lapi "github.com/filecoin-project/lotus/api"

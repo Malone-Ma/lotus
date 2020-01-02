@@ -7,6 +7,7 @@ import (
 	"strconv"
 	"text/tabwriter"
 
+	"github.com/filecoin-project/go-address"
 	"github.com/ipfs/go-cid"
 	"github.com/libp2p/go-libp2p-core/peer"
 	"golang.org/x/xerrors"
@@ -14,7 +15,6 @@ import (
 
 	lapi "github.com/filecoin-project/lotus/api"
 	actors "github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/types"
 )
 

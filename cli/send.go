@@ -4,8 +4,9 @@ import (
 	"fmt"
 
 	"github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/lotus/chain/types"
 	"gopkg.in/urfave/cli.v2"
+
+	"github.com/filecoin-project/lotus/chain/types"
 )
 
 var sendCmd = &cli.Command{

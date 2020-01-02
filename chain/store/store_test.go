@@ -4,12 +4,13 @@ import (
 	"context"
 	"testing"
 
+	blockstore "github.com/ipfs/go-ipfs-blockstore"
+
 	"github.com/filecoin-project/lotus/build"
 	"github.com/filecoin-project/lotus/chain/gen"
 	"github.com/filecoin-project/lotus/chain/store"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/node/repo"
-	blockstore "github.com/ipfs/go-ipfs-blockstore"
 )
 
 func init() {

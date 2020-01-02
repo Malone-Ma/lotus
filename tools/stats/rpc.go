@@ -7,7 +7,6 @@ import (
 	"time"
 
 	manet "github.com/multiformats/go-multiaddr-net"
-
 	"golang.org/x/xerrors"
 
 	"github.com/filecoin-project/lotus/api"

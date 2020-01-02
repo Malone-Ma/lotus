@@ -8,14 +8,13 @@ import (
 	"sync"
 
 	bls "github.com/filecoin-project/filecoin-ffi"
-
+	"github.com/filecoin-project/go-address"
+	"github.com/filecoin-project/go-crypto"
 	logging "github.com/ipfs/go-log"
 	"github.com/minio/blake2b-simd"
 	"golang.org/x/xerrors"
 
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/types"
-	"github.com/filecoin-project/go-crypto"
 )
 
 var log = logging.Logger("wallet")

@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/mitchellh/go-homedir"
-
 	logging "github.com/ipfs/go-log"
+	"github.com/mitchellh/go-homedir"
+	manet "github.com/multiformats/go-multiaddr-net"
 	"golang.org/x/xerrors"
 	"gopkg.in/urfave/cli.v2"
 
@@ -13,7 +13,6 @@ import (
 	"github.com/filecoin-project/lotus/build"
 	lcli "github.com/filecoin-project/lotus/cli"
 	"github.com/filecoin-project/lotus/node/repo"
-	manet "github.com/multiformats/go-multiaddr-net"
 )
 
 var log = logging.Logger("main")

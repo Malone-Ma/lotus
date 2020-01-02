@@ -4,16 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-
 	vchain "github.com/filecoin-project/chain-validation/pkg/chain"
 	vactors "github.com/filecoin-project/chain-validation/pkg/state/actors"
 	vaddress "github.com/filecoin-project/chain-validation/pkg/state/address"
 	vtypes "github.com/filecoin-project/chain-validation/pkg/state/types"
+	"github.com/filecoin-project/go-address"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 
 	"github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/wallet"
 )

@@ -6,8 +6,8 @@ import (
 	vchain "github.com/filecoin-project/chain-validation/pkg/chain"
 	vstate "github.com/filecoin-project/chain-validation/pkg/state"
 	vtypes "github.com/filecoin-project/chain-validation/pkg/state/types"
-
 	"github.com/filecoin-project/go-address"
+
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/vm"
 )

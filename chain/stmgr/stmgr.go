@@ -5,21 +5,21 @@ import (
 	"fmt"
 	"sync"
 
-	amt "github.com/filecoin-project/go-amt-ipld"
-	"github.com/filecoin-project/lotus/chain/actors"
+	bls "github.com/filecoin-project/filecoin-ffi"
 	"github.com/filecoin-project/go-address"
+	amt "github.com/filecoin-project/go-amt-ipld"
+	"github.com/ipfs/go-cid"
+	hamt "github.com/ipfs/go-hamt-ipld"
+	logging "github.com/ipfs/go-log"
+	cbg "github.com/whyrusleeping/cbor-gen"
+	"go.opencensus.io/trace"
+	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/lotus/chain/state"
 	"github.com/filecoin-project/lotus/chain/store"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/vm"
-	cbg "github.com/whyrusleeping/cbor-gen"
-	"golang.org/x/xerrors"
-
-	bls "github.com/filecoin-project/filecoin-ffi"
-	"github.com/ipfs/go-cid"
-	hamt "github.com/ipfs/go-hamt-ipld"
-	logging "github.com/ipfs/go-log"
-	"go.opencensus.io/trace"
 )
 
 var log = logging.Logger("statemgr")

@@ -4,10 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/lotus/chain/types"
 	xerrors "golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/chain/actors"
+	"github.com/filecoin-project/lotus/chain/types"
 )
 
 func (pm *Manager) loadPaychState(ctx context.Context, ch address.Address) (*types.Actor, *actors.PaymentChannelActorState, error) {

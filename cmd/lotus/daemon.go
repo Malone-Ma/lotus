@@ -6,7 +6,7 @@ import (
 	"context"
 	"io/ioutil"
 
-	"github.com/filecoin-project/go-sectorbuilder/paramfetch"
+	paramfetch "github.com/filecoin-project/go-paramfetch"
 	"github.com/multiformats/go-multiaddr"
 	"golang.org/x/xerrors"
 	"gopkg.in/urfave/cli.v2"

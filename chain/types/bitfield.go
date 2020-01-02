@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"io"
 
-	rlepluslazy "github.com/filecoin-project/lotus/lib/rlepluslazy"
 	cbg "github.com/whyrusleeping/cbor-gen"
 	"golang.org/x/xerrors"
+
+	rlepluslazy "github.com/filecoin-project/lotus/lib/rlepluslazy"
 )
 
 type BitField struct {

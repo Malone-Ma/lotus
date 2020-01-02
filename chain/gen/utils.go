@@ -5,6 +5,7 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/filecoin-project/go-address"
 	amt "github.com/filecoin-project/go-amt-ipld"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
@@ -17,7 +18,6 @@ import (
 
 	"github.com/filecoin-project/lotus/build"
 	actors "github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/state"
 	"github.com/filecoin-project/lotus/chain/store"
 	"github.com/filecoin-project/lotus/chain/types"

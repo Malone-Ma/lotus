@@ -7,16 +7,8 @@ import (
 	"encoding/json"
 	"sync"
 
-	"github.com/filecoin-project/lotus/build"
 	"github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/lotus/chain/state"
-	"github.com/filecoin-project/lotus/chain/vm"
-	"go.opencensus.io/trace"
-	"go.uber.org/multierr"
-
 	amt "github.com/filecoin-project/go-amt-ipld"
-	"github.com/filecoin-project/lotus/chain/types"
-
 	lru "github.com/hashicorp/golang-lru"
 	block "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
@@ -26,7 +18,14 @@ import (
 	logging "github.com/ipfs/go-log"
 	cbg "github.com/whyrusleeping/cbor-gen"
 	pubsub "github.com/whyrusleeping/pubsub"
+	"go.opencensus.io/trace"
+	"go.uber.org/multierr"
 	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/build"
+	"github.com/filecoin-project/lotus/chain/state"
+	"github.com/filecoin-project/lotus/chain/types"
+	"github.com/filecoin-project/lotus/chain/vm"
 )
 
 var log = logging.Logger("chainstore")

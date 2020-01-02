@@ -2,8 +2,6 @@ package sectorblocks
 
 import (
 	"context"
-	"github.com/filecoin-project/lotus/api"
-	"github.com/filecoin-project/lotus/storage"
 	"io/ioutil"
 
 	blocks "github.com/ipfs/go-block-format"
@@ -11,6 +9,9 @@ import (
 	blockstore "github.com/ipfs/go-ipfs-blockstore"
 	logging "github.com/ipfs/go-log"
 	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/api"
+	"github.com/filecoin-project/lotus/storage"
 )
 
 var log = logging.Logger("sectorblocks")

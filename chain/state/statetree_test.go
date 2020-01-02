@@ -3,10 +3,11 @@ package state
 import (
 	"testing"
 
-	actors "github.com/filecoin-project/lotus/chain/actors"
 	address "github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/lotus/chain/types"
 	hamt "github.com/ipfs/go-hamt-ipld"
+
+	actors "github.com/filecoin-project/lotus/chain/actors"
+	"github.com/filecoin-project/lotus/chain/types"
 )
 
 func BenchmarkStateTreeSet(b *testing.B) {

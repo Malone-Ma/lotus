@@ -6,9 +6,10 @@ import (
 	"sort"
 	"testing"
 
+	"gotest.tools/assert"
+
 	"github.com/filecoin-project/lotus/extern/rleplus"
 	bitvector "github.com/filecoin-project/lotus/extern/rleplus/internal"
-	"gotest.tools/assert"
 )
 
 func TestRleplus(t *testing.T) {

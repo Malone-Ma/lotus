@@ -3,9 +3,10 @@ package types
 import (
 	"bytes"
 	"context"
-	"github.com/filecoin-project/go-sectorbuilder"
 	"math/big"
 
+	"github.com/filecoin-project/go-address"
+	"github.com/filecoin-project/go-sectorbuilder"
 	block "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	"github.com/minio/sha256-simd"
@@ -13,7 +14,6 @@ import (
 	"go.opencensus.io/trace"
 	xerrors "golang.org/x/xerrors"
 
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/build"
 )
 

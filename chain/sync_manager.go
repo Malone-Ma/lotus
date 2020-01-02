@@ -5,8 +5,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/filecoin-project/lotus/chain/types"
 	peer "github.com/libp2p/go-libp2p-core/peer"
+
+	"github.com/filecoin-project/lotus/chain/types"
 )
 
 const BootstrapPeerThreshold = 2

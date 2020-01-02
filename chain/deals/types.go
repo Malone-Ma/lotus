@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"errors"
 
+	"github.com/filecoin-project/go-address"
+	"github.com/ipfs/go-cid"
+
 	"github.com/filecoin-project/lotus/api"
 	"github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/lib/cborutil"
-	"github.com/ipfs/go-cid"
 )
 
 var (

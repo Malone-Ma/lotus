@@ -5,11 +5,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/filecoin-project/lotus/lib/addrutil"
-	"golang.org/x/xerrors"
-
 	rice "github.com/GeertJohan/go.rice"
 	"github.com/libp2p/go-libp2p-core/peer"
+	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/lib/addrutil"
 )
 
 func BuiltinBootstrap() ([]peer.AddrInfo, error) {

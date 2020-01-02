@@ -2,7 +2,6 @@ package node
 
 import (
 	logging "github.com/ipfs/go-log"
-
 	"go.uber.org/fx"
 )
 

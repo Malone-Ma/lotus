@@ -5,6 +5,12 @@ import (
 	"fmt"
 	"math/rand"
 
+	vstate "github.com/filecoin-project/chain-validation/pkg/state"
+	vactors "github.com/filecoin-project/chain-validation/pkg/state/actors"
+	vaddress "github.com/filecoin-project/chain-validation/pkg/state/address"
+	vtypes "github.com/filecoin-project/chain-validation/pkg/state/types"
+	"github.com/filecoin-project/go-address"
+	"github.com/filecoin-project/go-crypto"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-hamt-ipld"
@@ -13,19 +19,12 @@ import (
 	cbg "github.com/whyrusleeping/cbor-gen"
 	"golang.org/x/xerrors"
 
-	vstate "github.com/filecoin-project/chain-validation/pkg/state"
-	vactors "github.com/filecoin-project/chain-validation/pkg/state/actors"
-	vaddress "github.com/filecoin-project/chain-validation/pkg/state/address"
-	vtypes "github.com/filecoin-project/chain-validation/pkg/state/types"
-
 	"github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/gen"
 	"github.com/filecoin-project/lotus/chain/state"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/vm"
 	"github.com/filecoin-project/lotus/chain/wallet"
-	"github.com/filecoin-project/go-crypto"
 )
 
 type StateWrapper struct {

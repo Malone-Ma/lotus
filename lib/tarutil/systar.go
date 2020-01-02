@@ -2,13 +2,13 @@ package tarutil
 
 import (
 	"archive/tar"
-	"golang.org/x/xerrors"
 	"io"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 
 	logging "github.com/ipfs/go-log"
+	"golang.org/x/xerrors"
 )
 
 var log = logging.Logger("tarutil")

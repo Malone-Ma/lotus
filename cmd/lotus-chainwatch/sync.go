@@ -6,12 +6,11 @@ import (
 	"context"
 	"sync"
 
-	actors2 "github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/go-address"
-
 	"github.com/ipfs/go-cid"
 
 	"github.com/filecoin-project/lotus/api"
+	actors2 "github.com/filecoin-project/lotus/chain/actors"
 	"github.com/filecoin-project/lotus/chain/store"
 	"github.com/filecoin-project/lotus/chain/types"
 )

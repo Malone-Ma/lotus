@@ -5,12 +5,13 @@ import (
 	"testing"
 
 	"github.com/filecoin-project/go-address"
+	"github.com/ipfs/go-cid"
+	"github.com/ipfs/go-datastore"
+
 	"github.com/filecoin-project/lotus/chain/store"
 	"github.com/filecoin-project/lotus/chain/types"
 	"github.com/filecoin-project/lotus/chain/types/mock"
 	"github.com/filecoin-project/lotus/chain/wallet"
-	"github.com/ipfs/go-cid"
-	"github.com/ipfs/go-datastore"
 )
 
 type testMpoolApi struct {

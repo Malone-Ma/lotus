@@ -3,20 +3,21 @@ package modules
 import (
 	"context"
 	"crypto/rand"
-	"github.com/filecoin-project/lotus/api/apistruct"
 	"io"
 	"io/ioutil"
 
-	"github.com/filecoin-project/lotus/build"
-	"github.com/filecoin-project/lotus/chain/types"
-	"github.com/filecoin-project/lotus/lib/addrutil"
-	"github.com/filecoin-project/lotus/node/modules/dtypes"
-	"github.com/filecoin-project/lotus/node/repo"
 	"github.com/gbrlsnchs/jwt/v3"
 	logging "github.com/ipfs/go-log"
 	"github.com/libp2p/go-libp2p-core/peerstore"
 	record "github.com/libp2p/go-libp2p-record"
 	"golang.org/x/xerrors"
+
+	"github.com/filecoin-project/lotus/api/apistruct"
+	"github.com/filecoin-project/lotus/build"
+	"github.com/filecoin-project/lotus/chain/types"
+	"github.com/filecoin-project/lotus/lib/addrutil"
+	"github.com/filecoin-project/lotus/node/modules/dtypes"
+	"github.com/filecoin-project/lotus/node/repo"
 )
 
 var log = logging.Logger("modules")

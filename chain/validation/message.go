@@ -2,16 +2,16 @@ package validation
 
 import (
 	"context"
-	"github.com/ipfs/go-cid"
-	"golang.org/x/xerrors"
 
 	vchain "github.com/filecoin-project/chain-validation/pkg/chain"
 	vactors "github.com/filecoin-project/chain-validation/pkg/state/actors"
 	vaddress "github.com/filecoin-project/chain-validation/pkg/state/address"
 	vtypes "github.com/filecoin-project/chain-validation/pkg/state/types"
+	"github.com/filecoin-project/go-address"
+	"github.com/ipfs/go-cid"
+	"golang.org/x/xerrors"
 
 	"github.com/filecoin-project/lotus/chain/actors"
-	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/lotus/chain/types"
 )
 
